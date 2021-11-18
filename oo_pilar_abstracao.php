@@ -3,9 +3,34 @@
 //modelo de funcionario    
 class Funcionario {
     //atributos
-    public $nome = 'Jose';
-    public $telefone = '464687546';
-    public $numFilhos = 2;
+    public $nome = null;
+    public $telefone = null;
+    public $numFilhos = null;
+
+    //getters setters
+    function setNome ($nome){
+        $this-> nome = $nome;
+    }
+
+    function setNumFilhos ($numFilhos){
+        $this-> numFilhos = $numFilhos;
+    }
+
+    function setTelefone ($telefone){
+        $this-> telefone = $telefone;
+    }
+
+    function getNome(){
+        return $this->nome;
+    }
+
+    function getNumFilhos(){
+        return $this->numFilhos;
+    }
+
+    function getTelefone(){
+        return $this->telefone;
+    }
 
     //métodos
     function resumirCadFunc (){
@@ -20,23 +45,21 @@ class Funcionario {
 
 $y = new Funcionario();
 
-echo $y->resumirCadFunc();
-echo '<br>';
-$y-> modificarNumFilhos(3);
-echo $y->resumirCadFunc();
+$y -> setNome('Luan');
+$y -> setNumFilhos(2);
 
-echo '<hr>';
+// echo $y -> resumirCadFunc();
+
+echo $y->getNome() . ' possui ' . $y->getNumFilhos() . ' filhos';
 
 $x = new Funcionario();
 
-echo $x -> resumirCadFunc();
 echo '<br>';
-$x-> modificarNumFilhos(7);
 
-echo $x -> resumirCadFunc();
+$x -> setNome('Ronaldo');
+$x -> setNumFilhos(11);
 
-
-
+echo $x->getNome() . ' possui ' . $x->getNumFilhos() . ' filhos';
 
 
 ?>
