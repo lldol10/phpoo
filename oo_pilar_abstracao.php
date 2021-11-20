@@ -64,7 +64,7 @@ $y -> __set('cargo','aux escritorio');
 
 // echo $y -> resumirCadFunc();
 
-echo $y->__get('nome') . ' possui ' . $y->__get('numFilhos') . ' filhos, e seu telefone é ->' . $y -> __get('telefone') . 'possui o cargo de ' . $y -> __get('cargo');
+// echo $y->__get('nome') . ' possui ' . $y->__get('numFilhos') . ' filhos, e seu telefone é ->' . $y -> __get('telefone') . 'possui o cargo de ' . $y -> __get('cargo');
 
 $x = new Funcionario();
 
